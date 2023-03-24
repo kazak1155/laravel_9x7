@@ -3,13 +3,11 @@
 namespace App\Events;
 
 use App\Models\News;
-use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
 class NewsHidden
 {
-
     public News $news;
 
     use Dispatchable, SerializesModels;
