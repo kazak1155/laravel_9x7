@@ -85,7 +85,7 @@ CREATE TABLE `news` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -94,7 +94,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES (1,'test','test','test',0,NULL,NULL),(2,'test2','test2','test2',0,NULL,NULL);
+INSERT INTO `news` VALUES (1,'test','test','test',1,NULL,'2023-03-24 08:02:44'),(2,'test2','test2','test2',1,NULL,'2023-03-24 07:35:31'),(3,'Test news title',NULL,'Test news body',0,'2023-03-24 07:14:13','2023-03-24 07:14:13'),(4,'Test news title',NULL,'Test news body',1,'2023-03-24 07:14:14','2023-03-24 08:02:36'),(5,'Test news title',NULL,'Test news body',0,'2023-03-24 07:21:40','2023-03-24 07:21:40');
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -194,4 +194,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-03-23 15:07:44
+-- Dump completed on 2023-03-24 13:12:04
