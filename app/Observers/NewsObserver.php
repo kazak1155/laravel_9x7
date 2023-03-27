@@ -10,10 +10,9 @@ class NewsObserver
     /**
      * Handle the News "created" event.
      */
-    public function created(News $news): void
+    public function saving(News $news): void
     {
         $news->slug = Str::slug($news->title);
-        $news->save();
     }
 
     /**
